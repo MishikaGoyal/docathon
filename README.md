@@ -84,7 +84,7 @@ Uses AI to assist in early **breast cancer detection** with a focus on Indian-sp
 #### Create Virtual Environment
 -python -m venv myenv
 #### Activate virtual environment
--venv/Scripts/activate(depends on OS)
+-myenv/Scripts/activate(depends on OS)
 #### Install Dependencies
 -pip install -r requirements.txt
 #### Run Server
