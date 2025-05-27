@@ -12,3 +12,4 @@ pydub
 torch
 transformers
 tensorflow
+flask_cors
