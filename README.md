@@ -1,4 +1,4 @@
-# 🩺 HealthBridge AI
+# 🩺 HealthBridge
 
 A unified, AI-powered platform enhancing communication, safety, and early detection in healthcare—built with empathy, precision, and purpose.
 
@@ -6,7 +6,7 @@ A unified, AI-powered platform enhancing communication, safety, and early detect
 
 ## 🌟 Overview
 
-**HealthBridge AI** empowers doctors and patients with intelligent tools that simplify clinical communication, improve medication safety, and assist with early diagnosis—especially designed for diverse, multilingual communities in India.
+**HealthBridge** empowers doctors and patients with intelligent tools that simplify clinical communication, improve medication safety, and assist with early diagnosis—especially designed for diverse, multilingual communities in India.
 
 ---
 
@@ -72,21 +72,38 @@ Uses AI to assist in early **breast cancer detection** with a focus on Indian-sp
 
 ## Setup Instructions
 
-## Frontend:
+### Frontend:
 -cd frontend
-## Install Dependencies
+#### Install Dependencies
 -npm install
-## Run Server
+#### Run Server
 -npm run dev
 
-## Backend:
+### Backend:
 -cd backend
-## Create Virtual Environment
+#### Create Virtual Environment
 -python -m venv myenv
-## Activate virtual environment
+#### Activate virtual environment
 -venv/Scripts/activate(depends on OS)
-## Install Dependencies
+#### Install Dependencies
 -pip install -r requirements.txt
-## Run Server
+#### Run Server
 -uvicorn app.main:app --reload
 
+### ML Models:
+-cd models
+#### Create Virtual Environment
+-python -m venv venv
+#### Activate virtual environment
+-venv/Scripts/activate(depends on OS)
+#### Install Dependencies
+-pip install -r requirements.txt
+#### Add your API keys to .env file
+- GOOGLE_API_KEY = "YOUR_GEMINI_API_KEY"
+- LANGCHAIN_API_KEY = "YOUR_LANGCHAIN_API_KEY"
+- LANGCHAIN_PROJECT = "langchain_project"
+- LANGCHAIN_TRACING_V2 = "true"
+- GLADIA_API_KEY = "YOUR_GLADIA_API_KEY"
+- GLADIA_URL = "https://api.gladia.io/audio/text/audio-transcription/"
+#### Run Server
+-python app.py
